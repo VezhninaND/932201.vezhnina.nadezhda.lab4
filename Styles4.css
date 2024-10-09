@@ -1,0 +1,154 @@
+html{
+	height: 100%;
+}
+body{
+	font-family: Arial;
+	margin: 0px;
+	text-align: center;
+	height: 100%;
+	background: #edeef0;
+}
+header{
+	background: #507299;
+	height: 35px;
+	padding-top: 8px;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 5;
+}
+header img{
+	float: left;
+	margin-left: 15%;
+}
+div.nav{
+	float: left;
+	text-align: left;
+	width: 200px;
+}
+div.nav div.nav-link{
+	padding: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+a{
+	color: #2e5473;
+	text-decoration: none;
+}
+div.nav-link:active{
+	background: #e1e5eb;
+}
+div.main{
+	margin: auto;
+	width: 970px;
+	margin-top: 60px;
+}
+div.content{
+	text-align: justify;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	border: solid 1px #d0d0d0;
+	width: 420px;
+	background: white;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 220px;
+	border-radius: 10px;
+}
+div.content::selection{
+	background: #e1e5eb;
+	color: green;
+}
+div.content img{
+	width: 100%;
+}
+div.buttons{
+	width: 100%;
+	border-top: solid 3px #d0d0d0;
+	height: 30px;
+	margin-top: 8px;
+	padding-top: 8px;
+}
+button{
+	border: none;
+	background: white;
+	color: #2e5473;
+	font-size: 12pt;
+	padding: 0px;
+}
+button:active{
+	background: #edeef0;
+}
+.like{
+	float: left;
+}
+.comm{
+	float: right;
+}
+div.right{
+	text-align: left;
+	width: 160px;
+	position: fixed;
+	left: 75%;
+}
+div.info{
+	border: solid 1px #d0d0d0;
+	background: white;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+div.info p{
+	background: #edeef0;
+}
+h1{
+	font-size: 12pt;
+}
+h2{
+	font-size: 12pt;
+	width: 440px;
+	border-bottom: solid 3px #d0d0d0;
+	position: relative;
+	right: 20px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	margin-top: 0px;
+}
+footer{
+	background: white;
+	color: #d0d0d0;
+	height: 20px;
+	padding-top: 5px;
+	width: 100%;
+}
+@media screen and (max-width: 1000px){
+	div.right{
+		display: none;
+	}
+	div.main{
+		margin-left: 50px;
+		width: 90%;
+	}
+}
+@media screen and (max-width: 768px){
+	div.nav{
+		float: none;
+		width: 400px;
+		margin: auto;
+		margin-top: 20px;
+	}
+	div.nav-link{
+		display: inline-block;
+		text-align: center;
+	}
+	div.main{
+		margin: auto;
+		margin-top: 60px;
+	}
+	div.content{
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
